@@ -9,6 +9,26 @@
   <body>
     <div id="app">
       <div class="chatbot-container">
+        <!-- 프롬프트 테스트 영역 -->
+        <div class="prompt-test-section">
+          <div class="prompt-header">
+            <h2>🔧 개발자 프롬프트 테스트</h2>
+            <button id="toggle-prompt" class="toggle-btn">프롬프트 편집</button>
+          </div>
+          <div class="prompt-editor-container" id="prompt-editor-container">
+            <textarea 
+              id="prompt-input" 
+              class="prompt-input"
+              placeholder="시스템 프롬프트를 입력하세요..."
+              rows="4"
+            ></textarea>
+            <div class="prompt-actions">
+              <button id="reset-prompt" class="prompt-btn secondary">기본값으로 리셋</button>
+              <button id="apply-prompt" class="prompt-btn primary">프롬프트 적용</button>
+            </div>
+          </div>
+        </div>
+        
         <div class="chatbot-header">
           <h1>🔮 오늘의 운세 챗봇</h1>
           <p>오늘의 운세를 물어보세요!</p>
