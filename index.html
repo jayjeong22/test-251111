@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>오늘의 운세 챗봇</title>
+  </head>
+  <body>
+    <div id="app">
+      <div class="chatbot-container">
+        <div class="chatbot-header">
+          <h1>🔮 오늘의 운세 챗봇</h1>
+          <p>오늘의 운세를 물어보세요!</p>
+        </div>
+        <div class="chatbot-messages" id="chatbot-messages">
+          <div class="message bot-message">
+            <div class="message-content">
+              안녕하세요! 오늘의 운세를 알려드리는 챗봇입니다. 어떤 운세가 궁금하신가요?
+            </div>
+          </div>
+        </div>
+        <div class="chatbot-input-container">
+          <input 
+            type="text" 
+            id="chatbot-input" 
+            class="chatbot-input" 
+            placeholder="메시지를 입력하세요..."
+            autocomplete="off"
+          />
+          <button id="chatbot-send" class="chatbot-send-btn">전송</button>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
